@@ -17,7 +17,7 @@ import remarkGfm from 'remark-gfm'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Avatar } from '@chatscope/chat-ui-kit-react';
-import Aipic from "./assets/chatgpt.jpeg";
+import Aipic from "./assets/popstack.svg";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -247,7 +247,7 @@ const Chatbot = () => {
                                             // Render regular message
                                             return (
                                                 <div key={String(i)}>
-                                                    {value.sender === 'user' ? null : <Avatar src={Aipic} />} 
+                                                    {value.sender === 'user' ? null : <Avatar src={Aipic} size='lg' />} 
                                                     <Message
                                                         model={{
                                                             message: value?.message,
